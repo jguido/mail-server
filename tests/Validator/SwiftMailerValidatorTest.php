@@ -32,7 +32,7 @@ class SwiftMailerValidatorTest extends BaseValidatorTest
             $validator->validate($config);
         } catch(\Exception $e) {
             self::assertTrue($e instanceof \RuntimeException);
-            self::assertEquals("Config key swiftmail must be set", $e->getMessage());
+            self::assertEquals("Config key swiftmailer must be set", $e->getMessage());
         }
     }
 
