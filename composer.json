@@ -1,0 +1,26 @@
+{
+    "name": "jguido/mail-server",
+    "description": "asynchronous mail sending server",
+    "type": "application",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "jeremy",
+            "email": "dje.guido@gmail.com"
+        }
+    ],
+    "require": {
+        "icicleio/http": "^0.3.0",
+        "phpunit/phpunit": "^5.3",
+        "swiftmailer/swiftmailer": "^5.4",
+        "symfony/config": "^3.0",
+        "monolog/monolog": "1.19.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MailServer\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
